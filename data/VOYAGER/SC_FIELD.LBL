@@ -1,0 +1,175 @@
+PDS_VERSION_ID                = PDS3                                          
+DATA_SET_ID                   = {"VG1-J-MAG-4-SUMM-S3COORDS-48.0SEC-V1.1",    
+                                 "VG1-J-MAG-4-SUMM-S3COORDS-9.60SEC-V1.1",    
+                                 "VG1-J-MAG-4-SUMM-S3COORDS-1.92SEC-V1.1",    
+                                 "VG1-J-MAG-4-SUMM-HGCOORDS-48.0SEC-V1.0",    
+                                 "VG1-J-MAG-4-SUMM-HGCOORDS-9.60SEC-V1.0",    
+                                 "VG1-J-MAG-4-SUMM-HGCOORDS-1.92SEC-V1.0"}    
+PRODUCT_ID                    = "SC_FIELD.TAB"                                
+PRODUCT_TYPE                  = DATA                                          
+PRODUCT_VERSION_ID            = "1.1"                                         
+PRODUCT_CREATION_TIME         = 2003-12-29T09:50                              
+                                                                              
+RECORD_TYPE                   = FIXED_LENGTH                                  
+RECORD_BYTES                  = 122                                           
+FILE_RECORDS                  = 46973                                         
+                                                                              
+START_TIME                    = 1979-02-26T00:00:35.897                       
+STOP_TIME                     = 1979-03-24T22:49:32.304                       
+SPACECRAFT_CLOCK_START_COUNT  = "16164:19:001"                                
+SPACECRAFT_CLOCK_STOP_COUNT   = "16972:50:001"                                
+                                                                              
+INSTRUMENT_HOST_NAME          = "VOYAGER 1"                                   
+INSTRUMENT_HOST_ID            = "VG1"                                         
+MISSION_PHASE_NAME            = "JUPITER ENCOUNTER"                           
+TARGET_NAME                   = "JUPITER"                                     
+INSTRUMENT_NAME               = "TRIAXIAL FLUXGATE MAGNETOMETER"              
+INSTRUMENT_ID                 = "MAG"                                         
+DESCRIPTION                   = "                                             
+      Voyager 1 MAG 48 second averaged data from the Jupiter Encounter in     
+      Spacecraft coordinates. The data cover the interval 1979-02-26T00:00    
+      to 1979-03-24T22:49."                                                   
+                                                                              
+^TABLE                        = "SC_FIELD.TAB"                                
+OBJECT                        = TABLE                                         
+  INTERCHANGE_FORMAT          = ASCII                                         
+  ROWS                        = 46973                                         
+  COLUMNS                     = 11                                            
+  ROW_BYTES                   = 122                                           
+  DESCRIPTION                 = "                                             
+      This ASCII table is comma delimited and has fixed width columns. It     
+      contains magnetic field data collected by the Voyager 1 magnetometer    
+      near Jupiter in Spacecraft coordinates."                                
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Time"                                        
+    COLUMN_NUMBER             = 1                                             
+    UNIT                      = "N/A"                                         
+    DATA_TYPE                 = TIME                                          
+    START_BYTE                = 1                                             
+    BYTES                     = 23                                            
+    DESCRIPTION               = "                                             
+      Time given in PDS format: yyyy-mm-ddThh:mm:ss.sss. The individual       
+      elements of the time field can be read using the format                 
+      (i4,4(1x,i2),1x,f6.3) yr, mon, day, hr, min, sec."                      
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Spacecraft Clock"                            
+    COLUMN_NUMBER             = 2                                             
+    UNIT                      = "N/A"                                         
+    DATA_TYPE                 = CHARACTER                                     
+    START_BYTE                = 25                                            
+    BYTES                     = 12                                            
+    DESCRIPTION               = "                                             
+      S/C clock counter (mod65536:mod60:fds_line)."                           
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "MAG ID"                                      
+    COLUMN_NUMBER             = 3                                             
+    UNIT                      = "N/A"                                         
+    DATA_TYPE                 = ASCII_INTEGER                                 
+    START_BYTE                = 38                                            
+    BYTES                     = 1                                             
+    DESCRIPTION               = "                                             
+      Magnetometer ID (1-LFM, 2-HFM)"                                         
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Bx"                                          
+    COLUMN_NUMBER             = 4                                             
+    UNIT                      = "NULL"                                        
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 40                                            
+    BYTES                     = 10                                            
+    MISSING_CONSTANT          = -9.999e+10                                    
+    DESCRIPTION               = "                                             
+      Spacecraft coordinates x-component of the magetic field."               
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "By"                                          
+    COLUMN_NUMBER             = 5                                             
+    UNIT                      = "NULL"                                        
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 51                                            
+    BYTES                     = 10                                            
+    MISSING_CONSTANT          = -9.999e+10                                    
+    DESCRIPTION               = "                                             
+      Spacecraft coordinates y-component of the magetic field."               
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Bz"                                          
+    COLUMN_NUMBER             = 6                                             
+    UNIT                      = "NULL"                                        
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 62                                            
+    BYTES                     = 10                                            
+    MISSING_CONSTANT          = -9.999e+10                                    
+    DESCRIPTION               = "                                             
+      Spacecraft coordinates z-component of the magetic field."               
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Bmag"                                        
+    COLUMN_NUMBER             = 7                                             
+    UNIT                      = "NULL"                                        
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 73                                            
+    BYTES                     = 10                                            
+    MISSING_CONSTANT          = -9.999e+10                                    
+    DESCRIPTION               = "                                             
+      Magnitude (sqrt of sum of squares) of the field component averages."    
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "RMS Bx"                                      
+    COLUMN_NUMBER             = 8                                             
+    UNIT                      = "NULL"                                        
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 84                                            
+    BYTES                     = 10                                            
+    MISSING_CONSTANT          = -9.999e+10                                    
+    DESCRIPTION               = "                                             
+      Root-mean-square deviation of Bx over the averaging interval."          
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "RMS By"                                      
+    COLUMN_NUMBER             = 9                                             
+    UNIT                      = "NULL"                                        
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 95                                            
+    BYTES                     = 10                                            
+    MISSING_CONSTANT          = -9.999e+10                                    
+    DESCRIPTION               = "                                             
+      Root-mean-square deviation of By over the averaging interval."          
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "RMS Bz"                                      
+    COLUMN_NUMBER             = 10                                            
+    UNIT                      = "NULL"                                        
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 106                                           
+    BYTES                     = 10                                            
+    MISSING_CONSTANT          = -9.999e+10                                    
+    DESCRIPTION               = "                                             
+      Root-mean-square deviation of Bz over the averaging interval."          
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "NPTS"                                        
+    COLUMN_NUMBER             = 11                                            
+    UNIT                      = "POINT"                                       
+    DATA_TYPE                 = ASCII_INTEGER                                 
+    START_BYTE                = 117                                           
+    BYTES                     = 4                                             
+    MISSING_CONSTANT          = -999                                          
+    DESCRIPTION               = "                                             
+      Number of points in the average."                                       
+  END_OBJECT                  = COLUMN                                        
+END_OBJECT                    = TABLE                                         
+END                                                                           

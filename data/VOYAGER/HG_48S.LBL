@@ -1,0 +1,228 @@
+PDS_VERSION_ID                = PDS3                                          
+DATA_SET_ID                   = "VG1-J-MAG-4-SUMM-HGCOORDS-48.0SEC-V1.0"      
+PRODUCT_ID                    = "HG_48S.TAB"                                  
+PRODUCT_TYPE                  = DATA                                          
+PRODUCT_VERSION_ID            = "1.1"                                         
+PRODUCT_CREATION_TIME         = 2003-12-23T08:45                              
+                                                                              
+RECORD_TYPE                   = FIXED_LENGTH                                  
+RECORD_BYTES                  = 147                                           
+FILE_RECORDS                  = 46973                                         
+                                                                              
+START_TIME                    = 1979-02-26T00:00:35.897                       
+STOP_TIME                     = 1979-03-24T22:49:32.304                       
+SPACECRAFT_CLOCK_START_COUNT  = "16164:19:001"                                
+SPACECRAFT_CLOCK_STOP_COUNT   = "16972:50:001"                                
+                                                                              
+INSTRUMENT_HOST_NAME          = "VOYAGER 1"                                   
+INSTRUMENT_HOST_ID            = "VG1"                                         
+MISSION_PHASE_NAME            = "JUPITER ENCOUNTER"                           
+TARGET_NAME                   = "JUPITER"                                     
+INSTRUMENT_NAME               = "TRIAXIAL FLUXGATE MAGNETOMETER"              
+INSTRUMENT_ID                 = "MAG"                                         
+DESCRIPTION                   = "                                             
+      Voyager 1 MAG 48 second averaged data from the Jupiter Encounter in     
+      Heliographic (RTN) coordinates. The data cover the interval             
+      1979-02-26T00:00 to 1979-03-24T22:49."                                  
+                                                                              
+^TABLE                        = "HG_48S.TAB"                                  
+OBJECT                        = TABLE                                         
+  INTERCHANGE_FORMAT          = ASCII                                         
+  ROWS                        = 46973                                         
+  COLUMNS                     = 15                                            
+  ROW_BYTES                   = 147                                           
+  DESCRIPTION                 = "                                             
+      This ASCII table is comma delimited and has fixed width columns. It     
+      contains magnetic field data collected by the Voyager 1 magnetometer    
+      near Jupiter in Heliographic (RTN) coordinates. In RTN coordinates the  
+      radial (R) direction is along the Sun to spacecraft line, and is        
+      positive in the anti-Sunward direction. The tangential (T) direction is 
+      parallel to the Solar Equatorial plane and is defined by Omega (the     
+      Sun's spin axis) X R. The normal (N) direction completes the right      
+      handed set."                                                            
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Time"                                        
+    COLUMN_NUMBER             = 1                                             
+    UNIT                      = "N/A"                                         
+    DATA_TYPE                 = TIME                                          
+    START_BYTE                = 1                                             
+    BYTES                     = 23                                            
+    DESCRIPTION               = "                                             
+      Time given in PDS format: yyyy-mm-ddThh:mm:ss.sss. The individual       
+      elements of the time field can be read using the format                 
+      (i4,4(1x,i2),1x,f6.3) yr, mon, day, hr, min, sec."                      
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Spacecraft Clock"                            
+    COLUMN_NUMBER             = 2                                             
+    UNIT                      = "N/A"                                         
+    DATA_TYPE                 = CHARACTER                                     
+    START_BYTE                = 25                                            
+    BYTES                     = 12                                            
+    DESCRIPTION               = "                                             
+      S/C clock counter (mod65536:mod60:fds_line)."                           
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "MAG ID"                                      
+    COLUMN_NUMBER             = 3                                             
+    UNIT                      = "N/A"                                         
+    DATA_TYPE                 = ASCII_INTEGER                                 
+    START_BYTE                = 38                                            
+    BYTES                     = 1                                             
+    DESCRIPTION               = "                                             
+      Magnetometer ID (1=LFM, 2=HFM)"                                         
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Br"                                          
+    COLUMN_NUMBER             = 4                                             
+    UNIT                      = "nT"                                          
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 40                                            
+    BYTES                     = 9                                             
+    MISSING_CONSTANT          = -9999.999                                     
+    DESCRIPTION               = "                                             
+      Radial component of the magnetic field, positive in the direction of    
+      Sun to spacecraft."                                                     
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Bt"                                          
+    COLUMN_NUMBER             = 5                                             
+    UNIT                      = "nT"                                          
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 50                                            
+    BYTES                     = 9                                             
+    MISSING_CONSTANT          = -9999.999                                     
+    DESCRIPTION               = "                                             
+      Azimuthal component of the magnetic field, positive in the direction    
+      of planetary orbital motion."                                           
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Bn"                                          
+    COLUMN_NUMBER             = 6                                             
+    UNIT                      = "nT"                                          
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 60                                            
+    BYTES                     = 9                                             
+    MISSING_CONSTANT          = -9999.999                                     
+    DESCRIPTION               = "                                             
+      North/South component of the magnetic field, positive northward."       
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Bmag"                                        
+    COLUMN_NUMBER             = 7                                             
+    UNIT                      = "nT"                                          
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 70                                            
+    BYTES                     = 9                                             
+    MISSING_CONSTANT          = -9999.999                                     
+    DESCRIPTION               = "                                             
+      Magnitude (sqrt of sum of squares) of the field component averages."    
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Average Bmag"                                
+    COLUMN_NUMBER             = 8                                             
+    UNIT                      = "nT"                                          
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 80                                            
+    BYTES                     = 9                                             
+    MISSING_CONSTANT          = -9999.999                                     
+    DESCRIPTION               = "                                             
+      Average of the field magnitude over the averaging interval (nT)."       
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Delta"                                       
+    COLUMN_NUMBER             = 9                                             
+    UNIT                      = "DEGREE"                                      
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 90                                            
+    BYTES                     = 7                                             
+    MISSING_CONSTANT          = -99.999                                       
+    DESCRIPTION               = "                                             
+      Spacecraft centered heliographic magnetic field latitude:               
+      Delta = asin(Bn/Bmag)."                                                 
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "Lambda"                                      
+    COLUMN_NUMBER             = 10                                            
+    UNIT                      = "DEGREE"                                      
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 98                                            
+    BYTES                     = 7                                             
+    MISSING_CONSTANT          = -99.999                                       
+    DESCRIPTION               = "                                             
+      Spacecraft centered heliographic magnetic field longitude:              
+      Lambda = atan(Bt/Br)."                                                  
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "RMS Br"                                      
+    COLUMN_NUMBER             = 11                                            
+    UNIT                      = "nT"                                          
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 106                                           
+    BYTES                     = 8                                             
+    MISSING_CONSTANT          = -99.999                                       
+    DESCRIPTION               = "                                             
+      Root-mean-square deviation of Br over the averaging interval."          
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "RMS Bt"                                      
+    COLUMN_NUMBER             = 12                                            
+    UNIT                      = "nT"                                          
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 115                                           
+    BYTES                     = 8                                             
+    MISSING_CONSTANT          = -99.999                                       
+    DESCRIPTION               = "                                             
+      Root-mean-square deviation of Bt over the averaging interval."          
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "RMS Bn"                                      
+    COLUMN_NUMBER             = 13                                            
+    UNIT                      = "nT"                                          
+    DATA_TYPE                 = ASCII_REAL                                    
+    START_BYTE                = 124                                           
+    BYTES                     = 8                                             
+    MISSING_CONSTANT          = -99.999                                       
+    DESCRIPTION               = "                                             
+      Root-mean-square deviation of Bn over the averaging interval."          
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "NPTS"                                        
+    COLUMN_NUMBER             = 14                                            
+    UNIT                      = "POINT"                                       
+    DATA_TYPE                 = ASCII_INTEGER                                 
+    START_BYTE                = 133                                           
+    BYTES                     = 2                                             
+    MISSING_CONSTANT          = -9                                            
+    DESCRIPTION               = "                                             
+      Number of points in the average."                                       
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+  OBJECT                      = COLUMN                                        
+    NAME                      = "DFLAG"                                       
+    COLUMN_NUMBER             = 15                                            
+    UNIT                      = "N/A"                                         
+    DATA_TYPE                 = CHARACTER                                     
+    START_BYTE                = 137                                           
+    BYTES                     = 8                                             
+    DESCRIPTION               = "                                             
+      An 8-character flag indicating software or spacecraft hardware          
+      intervention which reduce confidence in the data."                      
+  END_OBJECT                  = COLUMN                                        
+                                                                              
+END_OBJECT                    = TABLE                                         
+END                                                                           
