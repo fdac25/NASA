@@ -1,3 +1,6 @@
+// Right-side panel displaying details of the currently selected planet
+// - Expects a Planet or null; renders a placeholder when none selected
+
 'use client';
 
 import { Planet } from '@/types/planet';

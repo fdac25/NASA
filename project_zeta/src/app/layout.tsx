@@ -1,3 +1,6 @@
+// Root layout for the Next.js App Router
+// - Defines global fonts and wraps all pages with base HTML structure
+
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
