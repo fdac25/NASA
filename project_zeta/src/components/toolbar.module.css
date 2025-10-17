@@ -1,0 +1,106 @@
+.toolbar {
+  width: 300px;
+  height: 100vh;
+  background-color: #2a2a2a;
+  border-right: 1px solid #444;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.searchContainer {
+  position: relative;
+  padding: 20px;
+  border-bottom: 1px solid #444;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 12px 40px 12px 16px;
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #666;
+}
+
+.searchInput::placeholder {
+  color: #888;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 32px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+  pointer-events: none;
+}
+
+.menuIcon {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid #444;
+}
+
+
+.planetList {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.planetItem {
+  padding: 12px 16px;
+  margin-bottom: 4px;
+  background-color: transparent;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  font-size: 14px;
+}
+
+.planetItem:hover {
+  background-color: #3a3a3a;
+}
+
+.planetItem.selected {
+  background-color: #4a4a4a;
+  font-weight: 500;
+}
+
+.loading, .error {
+  padding: 20px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+/* Scrollbar styling */
+.planetList::-webkit-scrollbar {
+  width: 6px;
+}
+
+.planetList::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.planetList::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 3px;
+}
+
+.planetList::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
