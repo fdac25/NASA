@@ -1,3 +1,7 @@
+// Sidebar Toolbar
+// - Fetches planets from /api/planets
+// - Provides search and selection; highlights the selected item
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -64,9 +68,9 @@ export default function Toolbar({ onPlanetSelect, selectedPlanetId }: ToolbarPro
         ) : (
           filteredPlanets.map((planet) => (
             <div
-              key={planet.id}
+              key={planet._id}
               className={`${styles.planetItem} ${
-                selectedPlanetId === planet.id ? styles.selected : ''
+                selectedPlanetId === planet._id ? styles.selected : ''
               }`}
               onClick={() => handlePlanetClick(planet)}
             >

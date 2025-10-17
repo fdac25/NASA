@@ -1,3 +1,7 @@
+// Application home page
+// - Renders the sidebar Toolbar and the PlanetInfo panel
+// - Manages the currently selected planet in client state
+
 'use client';
 
 import { useState } from 'react';
@@ -17,7 +21,7 @@ export default function Home() {
     <div className={styles.page}>
       <Toolbar 
         onPlanetSelect={handlePlanetSelect}
-        selectedPlanetId={selectedPlanet?.id}
+        selectedPlanetId={selectedPlanet?._id}
       />
       
       <main className={styles.main}>
