@@ -11,6 +11,7 @@ NASA's extensive data repository contains thousands of datasets spanning over si
 - **Frontend**: React, Next.js, TypeScript
 - **Visualization**: Python (Plotly, Pandas)
 - **Data Processing**: Custom parsers for NASA legacy formats
+- **Database**: MongoDB
 - **Styling**: CSS Modules
 
 ## Getting Started
@@ -20,12 +21,14 @@ NASA's extensive data repository contains thousands of datasets spanning over si
 - Node.js (v18 or higher)
 - npm or yarn
 - Python 3.x (for data processing scripts)
+- MongoDB account (local or cloud)
 
 ### Installation
 
 1. Clone the repository:
 ```bash
 git clone https://github.com/fdac25/NASA.git
+cd NASA
 ```
 
 2. Install dependencies:
@@ -33,12 +36,19 @@ git clone https://github.com/fdac25/NASA.git
 npm install
 ```
 
-3. Run the development server:
+3. **Set up MongoDB connection** - Create a `.env.local` file in the root directory and add your MongoDB URI:
+```env
+MONGODB_URI="mongodb+srv://<username>:<password>@planet-database.dhbvzdf.mongodb.net/?retryWrites=true&w=majority&appName=planet-database"
+```
+
+> **Important**: You must connect to the database by adding your MongoDB URI to `.env.local` before running the application. Without this, the application will not be able to store or retrieve planetary data.
+
+4. Run the development server:
 ```bash
 npm run dev
 ```
 
-4. Open [http://localhost:3000](http://localhost:3000) in your browser
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Data Sources
 
@@ -48,19 +58,20 @@ Our datasets are sourced from NASA's open data repositories, focusing on:
 - Voyager mission data (Jupiter's atmosphere, outer planet surveys)
 - Planetary statistics from various NASA missions
 
-Data selection criteria:
-1. Represents significant scientific milestones with high educational value
-2. Can be reasonably processed within project timeline
-3. Has formatting or accessibility challenges that demonstrate our modernization approach
+### Data selection criteria:
+
+- Represents significant scientific milestones with high educational value
+- Can be reasonably processed within project timeline
+- Has formatting or accessibility challenges that demonstrate our modernization approach
 
 ## Team
 
 **University of Tennessee, Knoxville - EECS Department**
 
-- **Zebulon Mcknight** - Data Parsing & Dataset Selection Lead
-- **Eric Yang** - Data Research & Frontend Design
-- **Trevor Eisenbacher** - Python Visualizations & Documentation Lead
-- **Ahmed Ghazi** - Web Application Development Lead
+- Zebulon Mcknight - Data Parsing & Dataset Selection Lead
+- Eric Yang - Data Research & Frontend Design
+- Trevor Eisenbacher - Python Visualizations & Documentation Lead
+- Ahmed Ghazi - Web Application Development Lead
 
 ## Timeline
 
@@ -87,5 +98,3 @@ This project is developed as part of an academic program at the University of Te
 ## Keywords
 
 Data modernization, legacy format conversion, scientific data visualization, NASA datasets, habitable planets, educational resources, space exploration, public engagement
-
----
