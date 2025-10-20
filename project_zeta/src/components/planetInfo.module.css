@@ -1,7 +1,7 @@
 .planetInfo {
   position: absolute;
   right: 20px;
-  top: 50%;
+  top: 20%;
   transform: translateY(-50%);
   width: 350px;
   max-height: 80vh;
