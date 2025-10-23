@@ -99,3 +99,8 @@ This project is developed as part of an academic program at the University of Te
 ## Keywords
 
 Data modernization, legacy format conversion, scientific data visualization, NASA datasets, habitable planets, educational resources, space exploration, public engagement
+
+## Need additional resources?
+
+GitHub commands ! https://earthdatascience.org/workshops/intro-version-control-git/basic-git-commands/
+CSS worskapce   ! https://www.w3schools.com/css/css_image_transparency.asp
