@@ -34,6 +34,7 @@ cd NASA
 2. Install dependencies:
 ```bash
 npm install
+npm install particles.js
 ```
 
 3. **Set up MongoDB connection** - Create a `.env.local` file in the root directory and add your MongoDB URI:
