@@ -35,6 +35,7 @@
   position: relative;
 }
 
+/* The big planet visualizer in the center of the page */
 .planetVisualization {
   width: 100%;
   max-width: 600px;

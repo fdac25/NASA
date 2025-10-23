@@ -9,6 +9,7 @@ import Toolbar from '@/components/Toolbar';
 import PlanetInfo from '@/components/PlanetInfo';
 import { Planet } from '@/types/planet';
 import styles from "./page.module.css";
+import ParticlesStars from '@/components/ParticlesStars';
 
 export default function Home() {
   const [selectedPlanet, setSelectedPlanet] = useState<Planet | null>(null);
@@ -23,7 +24,7 @@ export default function Home() {
         onPlanetSelect={handlePlanetSelect}
         selectedPlanetId={selectedPlanet?._id}
       />
-      
+      <ParticlesStars/>
       <main className={styles.main}>
         <div className={styles.planetVisualization}>
           {/* Placeholder for planet visualization */}
