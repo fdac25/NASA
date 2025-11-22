@@ -4,11 +4,18 @@ export interface Planet {
   // Replace with all of the info we retrieve from NASA data and want to display
   _id: string;
   name: string;
-  gravity: number;
-  water: string;
-  gases: string;
-  description: string;
-  imageUrl?: string;
+  mass_kg: string; 
+  volume_km3: string;
+  density_kg_km3: string;
+  gravity_m_s2: number;
+  high_temp_c: number; 
+  low_temp_c: number; 
+  atmos_pressure_mbar: number; 
+  atmos_N: number; 
+  atmos_O: number; 
+  atmos_CO2: number; 
+  atmos_CH4: number; 
+  atmos_H: number; 
 }
 
 export interface PlanetListResponse {
