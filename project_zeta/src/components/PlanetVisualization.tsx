@@ -18,14 +18,14 @@ export default function PlanetVisualization({ planet }: Props) {
 
   // color for each world
   const planetColors: Record<string, string> = {
-    Mercury: '#b8b8b8',
-    Venus: '#d4a373',
-    Earth: '#3bb4c1',
-    Mars: '#c1440e',
-    Jupiter: '#d8a26a',
-    Saturn: '#e8d5a3',
-    Uranus: '#9fdceb',
-    Neptune: '#557de8',
+    "Mercury": '#b8b8b8',
+    "Venus": '#d4a373',
+    "Earth": '#3bb4c1',
+    "Mars": '#c1440e',
+    "Jupiter": '#d8a26a',
+    "Saturn ": '#e8d5a3',
+    "Uranus ": '#9fdceb',
+    "Neptune": '#557de8',
     default: '#888',
   };
 
