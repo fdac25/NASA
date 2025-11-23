@@ -6,12 +6,14 @@
 }
 
 .planet {
-  width: 180px;
-  height: 180px;
+  width: 220px;
+  height: 220px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #666, #222);
-  animation: rotate 20s linear infinite, glow 3s ease-in-out infinite;
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+  margin: 0 auto;
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.1),
+    inset -15px -25px 40px rgba(0, 0, 0, 0.45);
+  transition: background-color 0.3s ease;
 }
 
 .label {
@@ -23,8 +25,9 @@
 
 .placeholder {
   color: #888;
-  font-size: 20px;
   text-align: center;
+  margin-top: 40px;
+  font-size: 18px;
 }
 
 @keyframes rotate {
@@ -37,3 +40,4 @@
   50% { box-shadow: 0 0 40px rgba(255,255,255,0.25); }
   100% { box-shadow: 0 0 20px rgba(255,255,255,0.1); }
 }
+
