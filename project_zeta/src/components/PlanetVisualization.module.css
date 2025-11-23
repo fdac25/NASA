@@ -1,0 +1,39 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.planet {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #666, #222);
+  animation: rotate 20s linear infinite, glow 3s ease-in-out infinite;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.15);
+}
+
+.label {
+  margin-top: 16px;
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.placeholder {
+  color: #888;
+  font-size: 20px;
+  text-align: center;
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 20px rgba(255,255,255,0.1); }
+  50% { box-shadow: 0 0 40px rgba(255,255,255,0.25); }
+  100% { box-shadow: 0 0 20px rgba(255,255,255,0.1); }
+}

@@ -16,6 +16,19 @@ export interface Planet {
   atmos_CO2: number; 
   atmos_CH4: number; 
   atmos_H: number; 
+  description: string;
+  mass_kg_earthAdjusted: number; 
+  volume_km3_earthAdjusted: number;
+  density_kg_km3_earthAdjusted: number;
+  gravity_m_s2_earthAdjusted: number;
+  high_temp_c_earthAdjusted: number; 
+  low_temp_c_earthAdjusted: number; 
+  atmos_pressure_mbar_earthAdjusted: number; 
+  atmos_N_earthAdjusted: number; 
+  atmos_O_earthAdjusted: number; 
+  atmos_CO2_earthAdjusted: number; 
+  atmos_CH4_earthAdjusted: number; 
+  atmos_H_earthAdjusted: number; 
 }
 
 export interface PlanetListResponse {
