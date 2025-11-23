@@ -4,6 +4,7 @@ export interface Planet {
   // Replace with all of the info we retrieve from NASA data and want to display
   _id: string;
   name: string;
+  earth_similarity_score: number;
   mass_kg: string; 
   volume_km3: string;
   density_kg_km3: string;

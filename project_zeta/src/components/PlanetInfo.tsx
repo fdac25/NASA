@@ -73,6 +73,11 @@ const displayedValues = useEarthAdjusted
       <div className={styles.infoContainer}>
         <h2 className={styles.planetName}>{planet.name}</h2>
 
+        <div>
+          <span className={styles.propertyLabel}>Earth Similarity:</span>
+          <span className={styles.propertyValue}>{planet.earth_similarity_score}</span>
+        </div>
+
         <div className={styles.scrollableProperties}>
           <div className={styles.property}>
             <span className={styles.propertyLabel}>Mass:</span>
