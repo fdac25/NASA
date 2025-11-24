@@ -11,6 +11,7 @@ import { Planet } from '@/types/planet';
 import styles from "./page.module.css";
 import ParticlesStars from '@/components/ParticlesStars';
 import PlanetVisualization from '@/components/PlanetVisualization';
+import BackgroundMusic from "@/components/BackgroundMusic";
 
 export default function Home() {
   const [selectedPlanet, setSelectedPlanet] = useState<Planet | null>(null);
@@ -19,32 +20,30 @@ export default function Home() {
     setSelectedPlanet(planet);
   };
 
- 
-<div className={styles.planetVisualization}>
-  <PlanetVisualization planet={selectedPlanet} />
-</div>
-
-
   return (
+
     <div className={styles.page}>
+
+      {/* Background music */}
+      <BackgroundMusic />
+
+      {/* Toolbar */}
       <Toolbar 
         onPlanetSelect={handlePlanetSelect}
         selectedPlanetId={selectedPlanet?._id}
       />
+
+      {/* Particle Background */}
       <ParticlesStars/>
+
+    {/* Planet Visualization */}
       <main className={styles.main}>
-          {/* Placeholder for planet visualization */}
-          {/* <div className={styles.planetPlaceholder}> 
-            {selectedPlanet ? (
-              <div className={styles.planetName}>{selectedPlanet.name}</div>
-            ) : (
-              <div className={styles.placeholderText}>Select a planet to explore</div>
-            )} */ }
-          <div className={styles.planetVisualization}>
-            <PlanetVisualization planet={selectedPlanet} />
-          </div>
+        <div className={styles.planetVisualization}>
+          <PlanetVisualization planet={selectedPlanet} />
+        </div>
       </main>
       
+      {/* Planet Info */}
       <PlanetInfo planet={selectedPlanet} />
     </div>
   );

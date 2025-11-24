@@ -44,8 +44,17 @@ export default function Toolbar({ onPlanetSelect, selectedPlanetId }: ToolbarPro
   );
 
   const handlePlanetClick = (planet: Planet) => {
+
+    // Select the planet
     onPlanetSelect(planet);
+
+    // Play click sound
+    const clickAudio = new Audio('/audio/whimsy_click.mp3');
+    clickAudio.volume = 0.5;
+    clickAudio.play().catch(() => console.log('Audio play prevented'));
+    
   };
+
 
   return (
     <div className={styles.toolbar}>
@@ -73,6 +82,12 @@ export default function Toolbar({ onPlanetSelect, selectedPlanetId }: ToolbarPro
                 selectedPlanetId === planet._id ? styles.selected : ''
               }`}
               onClick={() => handlePlanetClick(planet)}
+              onMouseEnter={() => {
+                // Play hover sound
+                const hoverAudio = new Audio('/audio/whimsy_hover.mp3'); // file in /public/audio/
+                hoverAudio.volume = 0.25;
+                hoverAudio.play().catch(() => console.log('Hover audio blocked'));
+              }}
             >
               {planet.name}
             </div>

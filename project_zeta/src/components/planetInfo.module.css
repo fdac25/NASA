@@ -2,7 +2,7 @@
   position: absolute;
   right: 20px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-55%);
 
   width: 350px;
   max-height: 80vh;        /* constrain to viewport */

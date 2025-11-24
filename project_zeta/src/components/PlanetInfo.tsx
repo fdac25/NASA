@@ -128,7 +128,17 @@ const displayedValues = useEarthAdjusted
         <div className={styles.footerButtonContainer}>
           <button
             className={styles.toggleButton}
-            onClick={() => setUseEarthAdjusted(!useEarthAdjusted)}
+            onClick={() => {
+
+              setUseEarthAdjusted(!useEarthAdjusted)
+
+              // Play click sound
+              const clickAudio = new Audio('/audio/whimsy_click.mp3');
+              clickAudio.volume = 0.3;
+              clickAudio.play().catch(() => console.log('Audio play prevented'));
+
+              }
+            }
           >
             {useEarthAdjusted ? 'Show Original Values' : 'Show Earth-Adjusted Values'}
           </button>
