@@ -1,3 +1,7 @@
+// Application home page
+// - Renders the sidebar Toolbar and the PlanetInfo panel
+// - Manages the currently selected planet in client state
+
 'use client';
 
 import { useState } from 'react';
