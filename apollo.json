@@ -1,0 +1,191 @@
+[
+  {
+    "name": "EPOCH",
+    "column_number": 1,
+    "unit": "",
+    "data_type": "TIME",
+    "start_byte": 1,
+    "bytes": 19,
+    "description": "Universal Time"
+  },
+  {
+    "name": "JULIAN_DATE",
+    "column_number": 2,
+    "unit": "",
+    "data_type": "ASCII_REAL",
+    "start_byte": 22,
+    "bytes": 13,
+    "description": "Julian date for the universal time in"
+  },
+  {
+    "name": "DENSITY",
+    "column_number": 3,
+    "unit": "protons/cm**3",
+    "data_type": "ASCII_REAL",
+    "start_byte": 37,
+    "bytes": 5,
+    "description": "Proton Density"
+  },
+  {
+    "name": "AP_RATIO",
+    "column_number": 4,
+    "unit": "",
+    "data_type": "ASCII_REAL",
+    "start_byte": 44,
+    "bytes": 5,
+    "description": "Alpha to Proton Ratio"
+  },
+  {
+    "name": "VEL",
+    "column_number": 5,
+    "unit": "km/s",
+    "data_type": "ASCII_INTEGER",
+    "start_byte": 51,
+    "bytes": 4,
+    "description": "Proton Bulk Speed"
+  },
+  {
+    "name": "VTH",
+    "column_number": 6,
+    "unit": "km/s",
+    "data_type": "ASCII_INTEGER",
+    "start_byte": 57,
+    "bytes": 3,
+    "description": "Proton Thermal Velocity"
+  },
+  {
+    "name": "EAST",
+    "column_number": 7,
+    "unit": "deg",
+    "data_type": "ASCII_REAL",
+    "start_byte": 62,
+    "bytes": 5,
+    "description": "Proton Flow Angle toward East in Solar"
+  },
+  {
+    "name": "NORTH",
+    "column_number": 8,
+    "unit": "deg",
+    "data_type": "ASCII_REAL",
+    "start_byte": 69,
+    "bytes": 5,
+    "description": "Proton Flow Angle toward North in Solar"
+  },
+  {
+    "name": "FLAG",
+    "column_number": 9,
+    "unit": "",
+    "data_type": "ASCII_INTEGER",
+    "start_byte": 76,
+    "bytes": 10,
+    "description": "FLAG Word bits not separately shown; packed in"
+  },
+  {
+    "name": "IA",
+    "column_number": 10,
+    "unit": "",
+    "data_type": "ASCII_INTEGER",
+    "start_byte": 88,
+    "bytes": 1,
+    "description": "Flag for how angle alpha was derived.  See"
+  },
+  {
+    "name": "IB",
+    "column_number": 11,
+    "unit": "",
+    "data_type": "ASCII_INTEGER",
+    "start_byte": 91,
+    "bytes": 2,
+    "description": "Flag for how angle beta was derived. See"
+  },
+  {
+    "name": "IDISCP",
+    "column_number": 12,
+    "unit": "",
+    "data_type": "ASCII_INTEGER",
+    "start_byte": 95,
+    "bytes": 2,
+    "description": "1 means that side cup not next to cup A has"
+  },
+  {
+    "name": "GAIN",
+    "column_number": 13,
+    "unit": "",
+    "data_type": "ASCII_INTEGER",
+    "start_byte": 99,
+    "bytes": 2,
+    "description": "Gain Level: 0 = Low; 1 = High"
+  },
+  {
+    "name": "RMS",
+    "column_number": 14,
+    "unit": "percent",
+    "data_type": "ASCII_REAL",
+    "start_byte": 103,
+    "bytes": 5,
+    "description": "Percentage Error in Fitting Program"
+  },
+  {
+    "name": "KUPA",
+    "column_number": 15,
+    "unit": "",
+    "data_type": "ASCII_INTEGER",
+    "start_byte": 110,
+    "bytes": 2,
+    "description": "Number of side cup (not vertical) with most"
+  },
+  {
+    "name": "CURA",
+    "column_number": 16,
+    "unit": "picoamps",
+    "data_type": "ASCII_REAL",
+    "start_byte": 114,
+    "bytes": 6,
+    "description": "Current in Cup A (shown by KUPA)"
+  },
+  {
+    "name": "CURB",
+    "column_number": 17,
+    "unit": "picoamps",
+    "data_type": "ASCII_REAL",
+    "start_byte": 122,
+    "bytes": 6,
+    "description": "Current in Cup B (CCW from Cup A)"
+  },
+  {
+    "name": "CURC",
+    "column_number": 18,
+    "unit": "picoamps",
+    "data_type": "ASCII_REAL",
+    "start_byte": 130,
+    "bytes": 6,
+    "description": "Current in Cup C (CW from Cup A)"
+  },
+  {
+    "name": "CUR7",
+    "column_number": 19,
+    "unit": "picoamps",
+    "data_type": "ASCII_REAL",
+    "start_byte": 138,
+    "bytes": 6,
+    "description": "Current in Cup 7 (center, vertical)"
+  },
+  {
+    "name": "FACTD",
+    "column_number": 20,
+    "unit": "",
+    "data_type": "ASCII_REAL",
+    "start_byte": 146,
+    "bytes": 4,
+    "description": "Correction for M-B least sq est of density"
+  },
+  {
+    "name": "XNOISE",
+    "column_number": 21,
+    "unit": "picoamps",
+    "data_type": "ASCII_REAL",
+    "start_byte": 152,
+    "bytes": 6,
+    "description": "Noise level used in estimating angles"
+  }
+]

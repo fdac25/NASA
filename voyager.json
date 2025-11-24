@@ -1,0 +1,137 @@
+[
+  {
+    "name": "Time",
+    "column_number": 1,
+    "unit": "N/A",
+    "data_type": "TIME",
+    "start_byte": 1,
+    "bytes": 23,
+    "description": ""
+  },
+  {
+    "name": "Spacecraft Clock",
+    "column_number": 2,
+    "unit": "N/A",
+    "data_type": "CHARACTER",
+    "start_byte": 25,
+    "bytes": 12,
+    "description": ""
+  },
+  {
+    "name": "MAG ID",
+    "column_number": 3,
+    "unit": "N/A",
+    "data_type": "ASCII_INTEGER",
+    "start_byte": 38,
+    "bytes": 1,
+    "description": ""
+  },
+  {
+    "name": "Br",
+    "column_number": 4,
+    "unit": "nT",
+    "data_type": "ASCII_REAL",
+    "start_byte": 40,
+    "bytes": 9,
+    "description": ""
+  },
+  {
+    "name": "Bt",
+    "column_number": 5,
+    "unit": "nT",
+    "data_type": "ASCII_REAL",
+    "start_byte": 50,
+    "bytes": 9,
+    "description": ""
+  },
+  {
+    "name": "Bn",
+    "column_number": 6,
+    "unit": "nT",
+    "data_type": "ASCII_REAL",
+    "start_byte": 60,
+    "bytes": 9,
+    "description": ""
+  },
+  {
+    "name": "Bmag",
+    "column_number": 7,
+    "unit": "nT",
+    "data_type": "ASCII_REAL",
+    "start_byte": 70,
+    "bytes": 9,
+    "description": ""
+  },
+  {
+    "name": "Average Bmag",
+    "column_number": 8,
+    "unit": "nT",
+    "data_type": "ASCII_REAL",
+    "start_byte": 80,
+    "bytes": 9,
+    "description": ""
+  },
+  {
+    "name": "Delta",
+    "column_number": 9,
+    "unit": "DEGREE",
+    "data_type": "ASCII_REAL",
+    "start_byte": 90,
+    "bytes": 7,
+    "description": ""
+  },
+  {
+    "name": "Lambda",
+    "column_number": 10,
+    "unit": "DEGREE",
+    "data_type": "ASCII_REAL",
+    "start_byte": 98,
+    "bytes": 7,
+    "description": ""
+  },
+  {
+    "name": "RMS Br",
+    "column_number": 11,
+    "unit": "nT",
+    "data_type": "ASCII_REAL",
+    "start_byte": 106,
+    "bytes": 8,
+    "description": ""
+  },
+  {
+    "name": "RMS Bt",
+    "column_number": 12,
+    "unit": "nT",
+    "data_type": "ASCII_REAL",
+    "start_byte": 115,
+    "bytes": 8,
+    "description": ""
+  },
+  {
+    "name": "RMS Bn",
+    "column_number": 13,
+    "unit": "nT",
+    "data_type": "ASCII_REAL",
+    "start_byte": 124,
+    "bytes": 8,
+    "description": ""
+  },
+  {
+    "name": "NPTS",
+    "column_number": 14,
+    "unit": "POINT",
+    "data_type": "ASCII_INTEGER",
+    "start_byte": 133,
+    "bytes": 2,
+    "description": ""
+  },
+  {
+    "name": "DFLAG",
+    "column_number": 15,
+    "unit": "N/A",
+    "data_type": "CHARACTER",
+    "start_byte": 137,
+    "bytes": 8,
+    "description": ""
+  }
+]
