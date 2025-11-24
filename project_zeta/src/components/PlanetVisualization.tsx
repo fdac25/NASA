@@ -7,6 +7,7 @@ interface Props {
   planet: Planet | null;
 }
 
+//header section for selection
 export default function PlanetVisualization({ planet }: Props) {
   if (!planet) {
     return (
