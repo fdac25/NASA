@@ -11,16 +11,9 @@ import BackgroundMusic from "@/components/BackgroundMusic";
 
 export default function Home() {
   const [selectedPlanet, setSelectedPlanet] = useState<Planet | null>(null);
-  const [burstParticles, setBurstParticles] = useState(false);
 
   const handlePlanetSelect = (planet: Planet) => {
     setSelectedPlanet(planet);
-
-    // Trigger particle burst
-    setBurstParticles(true);
-
-    // Reset the trigger shortly to allow next click to retrigger
-    setTimeout(() => setBurstParticles(false), 100);
   };
 
   return (
