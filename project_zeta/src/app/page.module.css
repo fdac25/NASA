@@ -43,10 +43,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2a2a2a;
+  /* background-color: #2a2a2a; */
+  background-color: transparent;
   border-radius: 16px;
-  border: 1px solid #444;
-  margin-left: 15%;
+  /* border: 1px solid #444; */
+  margin-left: 10%;
   margin-right: auto;
 }
 
