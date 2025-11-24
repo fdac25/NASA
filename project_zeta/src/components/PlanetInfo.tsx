@@ -50,7 +50,7 @@ const [maxGas, maxValue] = getMostAbundantGas(planet);
  // Example: switch values
 const displayedValues = useEarthAdjusted
     ? {
-        mass_kg: planet.mass_kg_earthAdjusted.toFixed(2) ?? planet.mass_kg,
+        mass_kg: planet.mass_kg_earthAdjusted?.toFixed(2) ?? planet.mass_kg,
         volume_km3: planet.volume_km3_earthAdjusted.toFixed(2) ?? planet.volume_km3,
         density_kg_km3: planet.density_kg_km3_earthAdjusted.toFixed(2) ?? planet.density_kg_km3,
         gravity_m_s2: planet.gravity_m_s2_earthAdjusted ?? planet.gravity_m_s2,

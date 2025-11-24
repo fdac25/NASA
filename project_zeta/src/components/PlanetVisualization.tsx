@@ -26,6 +26,8 @@ export default function PlanetVisualization({ planet }: Props) {
     "Saturn ": '#e8d5a3',
     "Uranus ": '#9fdceb',
     "Neptune": '#557de8',
+    "Keplar 186-f": '#96860cff',
+    "Europa": '#eaeaea',
     default: '#888',
   };
 
